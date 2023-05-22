@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     //for debuggin purposes
     private InputAction resetAction;
     private float startingX = 0.5f;
+    // private float DIMENSION_DIF = 21.45f;
     private float DIMENSION_DIF = 20.72f;
 
     private Rigidbody2D body;
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isOnTop = true;
     public bool isPeeking = false;
+    private bool isBlinking = false;
 
 
     private void Awake() 
@@ -126,9 +128,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (ctx.started && !isPeeking)
         {
-
+            isBlinking = true;
             transform.position = mirror.transform.position;
 
+            //Player is on top, going down
             if (isOnTop)
             {
                 topCam.m_Follow = mirror.transform;
@@ -142,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
                 topCam.m_Priority = 8;
                 bottomCam.m_Priority = 10;
             }
-            else
+            else //Player is on bottom, going up
             {
                 topCam.m_Follow = transform;
                 bottomCam.m_Follow = mirror.transform;
@@ -157,6 +160,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             isOnTop = !isOnTop;
+            isBlinking = false;
         }        
         Debug.Log("Player blinked");
     }
@@ -168,6 +172,7 @@ public class PlayerMovement : MonoBehaviour
         {
             alreadyCanceled = false;
             body.velocity = new Vector2(body.velocity.x, jumpForce);
+            isGrounded = false;
         }
 
         //Don't want to be able to press+release jump key again
@@ -196,22 +201,53 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the player collided with a ground collider
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
+        Debug.Log("COLLISION ALERT");
+        if (!isBlinking)
+        {        
+            if (collision.gameObject.CompareTag("Ground"))
+            {                  
+            }
+            if (collision.gameObject.CompareTag("Enemy"))
+            {
+                //take damage from enemy and get pushed back
+            }
         }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        // Check if the player is no longer colliding with the ground collider
-        if (collision.gameObject.CompareTag("Ground"))
+        else //player just blinked
         {
-            isGrounded = false;
-        }
+            if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Void"))
+            {
+                //Player.takeDamage(collision.gameObject.damageAmount);
+                //Remove ability for player to move
+                OnDisable();
+            }
+            else if (collision.gameObject.CompareTag("Ground"))
+            {
+                //Cast rays in all four cardinal directions. If there's ground within
+                //x units in every direction, we're stuck in the ground.
+                int count = 0;
+                float rayDistance = 0.02f;
+                
+                Vector2[] dir = {new Vector2(1, 0), new Vector2(-1, 0), new Vector2(0, 1), new Vector2(0, -1)};
+                // bool onBottom = false;
+                for (int i=0; i<4; i++)
+                {
+                    RaycastHit2D hit = Physics2D.Raycast(transform.position, dir[i], rayDistance);
+                    if (hit.collider != null && hit.collider.CompareTag("Ground"))
+                    {
+                        // if (i==3)
+                        //     onBottom = true;
+                        count++;
+                    }
+                }
+                if (count == 4)
+                {
+                    Debug.Log("Stuck in ground");
+                    OnDisable();
+                }
+            }
+            isBlinking = false;
+        }        
     }
-
 
     private void FixedUpdate() 
     {
@@ -227,6 +263,16 @@ public class PlayerMovement : MonoBehaviour
         {
             body.velocity = vel; 
         }
+
+        //No choice but to check if touching the ground here, because if 
+        //we collide with a vertical surface like stairs, we will slip down
+        //to the ground, but it won't trigger a second collision.
+        //Cast ray beneath the player to check if they're touching the ground 
+        
+        float rayDistance = 1.02f;
+        //float raySides = 0.52;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayDistance);
+        isGrounded = hit.collider != null;
     }
 
     private void LateUpdate() 

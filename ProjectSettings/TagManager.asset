@@ -10,6 +10,7 @@ TagManager:
   - BottomCam
   - Light
   - PeekCam
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -52,6 +53,9 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 3792034133
+    locked: 0
+  - name: Enemies
+    uniqueID: 1522786923
     locked: 0
   - name: Player
     uniqueID: 605826349
