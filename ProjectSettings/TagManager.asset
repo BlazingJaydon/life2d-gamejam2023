@@ -10,21 +10,18 @@ TagManager:
   - BottomCam
   - Light
   - PeekCam
-<<<<<<< HEAD
-  - Enemy
-=======
   - LevelManager
->>>>>>> BadBlink
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
   - Player
   - Enemies
-  - Background
+  - 
   - 
   - 
   - 
@@ -59,7 +56,7 @@ TagManager:
     uniqueID: 3792034133
     locked: 0
   - name: Enemies
-    uniqueID: 1522786923
+    uniqueID: 2206657559
     locked: 0
   - name: Player
     uniqueID: 605826349

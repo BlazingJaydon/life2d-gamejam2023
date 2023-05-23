@@ -7,8 +7,11 @@ public class PatrolEnemyMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D enemyBody;
 
+    public Animator animator;
+
     private void Awake()
     {
+        animator.SetBool("isRunning", true);
         enemyBody = GetComponent<Rigidbody2D>();
     }
 

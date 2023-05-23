@@ -13,7 +13,6 @@ public class EnemyCombat : MonoBehaviour
 
     private void Awake()
     {
-        animator.SetBool("isRunning", true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) 
