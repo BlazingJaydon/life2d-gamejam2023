@@ -18,10 +18,13 @@ public class PatrolEnemyMovement : MonoBehaviour
     }
 
 
-    private void OnTriggerExit2D(Collider2D other) 
+    private void OnTriggerExit2D(Collider2D collision) 
     {
-        moveSpeed = -moveSpeed;
-        FlipEnemyFacing();
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            moveSpeed = -moveSpeed;
+            FlipEnemyFacing();
+        }
     }
 
     void Update()
