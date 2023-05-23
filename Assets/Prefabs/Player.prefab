@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9104366224420772181}
   - component: {fileID: 9104366224420772138}
   - component: {fileID: 9104366224420772136}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player-Mirror
   m_TagString: Mirror
   m_Icon: {fileID: 0}
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c985f32c11a11824f945a839e422abb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DIMENSION_DIF: -21.29555
 --- !u!1 &9104366225334644926
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +139,7 @@ GameObject:
   - component: {fileID: 9104366225334644922}
   - component: {fileID: 9104366225334644901}
   - component: {fileID: 9104366225334644900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -201,7 +202,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 605826349
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.47798735, b: 0.47798735, a: 1}
