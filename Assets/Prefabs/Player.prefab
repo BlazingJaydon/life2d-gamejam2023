@@ -276,6 +276,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 383317127655059825}
   spriteRenderer: {fileID: 9104366225334644923}
+  DetectGroundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   peekSpeed: 10
   isPeeking: 0
 --- !u!114 &9104366225334644900

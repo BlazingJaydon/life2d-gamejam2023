@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 643843666801182523}
   - component: {fileID: 643843666801182528}
   - component: {fileID: 643843666801182522}
-  - component: {fileID: 643843666801182529}
-  - component: {fileID: 643843666801182530}
+  - component: {fileID: 78723583190448390}
+  - component: {fileID: 4129470126055359899}
+  - component: {fileID: 4873305212374000587}
   m_Layer: 7
   m_Name: Slayer (Patroller)
   m_TagString: Enemy
@@ -175,7 +176,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &643843666801182529
+--- !u!114 &78723583190448390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,12 +185,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 643843666801182521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f638bb93b44f5d640b3631f70be2de49, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d0dced6914c7e24ca665fcd7869a90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
   animator: {fileID: 643843666801182522}
---- !u!114 &643843666801182530
+--- !u!114 &4129470126055359899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,15 +198,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 643843666801182521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83c5e0c1735b1d8459e547d5cef90bfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 2408892f590f9f441ad1bc0d09804dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 643843666801182522}
   attackPoint: {fileID: 643843667114245226}
-  attackRange: 1.49
+  attackRange: 0.5
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &4873305212374000587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643843666801182521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7dbded87b4f7c49a4d8582cd5546a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanDetectPlayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &643843667114245225
 GameObject:
   m_ObjectHideFlags: 0

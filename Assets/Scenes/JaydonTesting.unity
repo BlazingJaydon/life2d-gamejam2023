@@ -515,6 +515,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9104366224420772137, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
   m_PrefabInstance: {fileID: 980148765}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &344590314 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 643843667114245226, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
+  m_PrefabInstance: {fileID: 643843667323304832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &375401535
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,6 +674,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &589397178 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 643843666801182522, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
+  m_PrefabInstance: {fileID: 643843667323304832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &673543104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,6 +2540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9104366225334644926, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
 --- !u!1001 &1039747810
@@ -4352,12 +4366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c5e0c1735b1d8459e547d5cef90bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2112198269}
-  attackPoint: {fileID: 1080080666}
-  attackRange: 1.49
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!114 &2112198268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4370,8 +4378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f638bb93b44f5d640b3631f70be2de49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
-  animator: {fileID: 0}
 --- !u!95 &2112198269
 Animator:
   serializedVersion: 5
@@ -4531,6 +4537,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 78723583190448390, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
+      propertyPath: chasingSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 643843666801182521, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
       propertyPath: m_Name
       value: Slayer (Patroller)
@@ -4579,6 +4589,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4129470126055359899, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 589397178}
+    - target: {fileID: 4129470126055359899, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 344590314}
+    - target: {fileID: 7131066782381003853, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 589397178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
 --- !u!1001 &1502546713632309937
