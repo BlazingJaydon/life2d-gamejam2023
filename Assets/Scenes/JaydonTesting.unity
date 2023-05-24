@@ -888,7 +888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
-  animator: {fileID: 0}
+  animator: {fileID: 589397178}
 --- !u!114 &589397186
 MonoBehaviour:
   m_ObjectHideFlags: 0
