@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanDetectPlayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 72
 --- !u!1 &643843667114245225
 GameObject:
   m_ObjectHideFlags: 0
