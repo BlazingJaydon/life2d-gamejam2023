@@ -124,7 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c985f32c11a11824f945a839e422abb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DIMENSION_DIF: -21.29555
 --- !u!1 &9104366225334644926
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,6 +138,7 @@ GameObject:
   - component: {fileID: 9104366225334644922}
   - component: {fileID: 9104366225334644901}
   - component: {fileID: 9104366225334644900}
+  - component: {fileID: 383317127655059825}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -274,6 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff8a555ef228a846a1911b9178e6548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 383317127655059825}
+  spriteRenderer: {fileID: 9104366225334644923}
   peekSpeed: 10
   isPeeking: 0
 --- !u!114 &9104366225334644900
@@ -446,6 +448,27 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!95 &383317127655059825
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9104366225334644926}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52ac3dc187730ca468e9b54deb41ce71, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9104366225444685628
 GameObject:
   m_ObjectHideFlags: 0
