@@ -4538,6 +4538,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 78723583190448390, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
+      propertyPath: patrolSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 78723583190448390, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
       propertyPath: chasingSpeed
       value: 10
       objectReference: {fileID: 0}
