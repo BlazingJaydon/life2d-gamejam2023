@@ -188,6 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0dced6914c7e24ca665fcd7869a90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolSpeed: 2
+  chasingSpeed: 4
   animator: {fileID: 643843666801182522}
 --- !u!114 &4129470126055359899
 MonoBehaviour:
