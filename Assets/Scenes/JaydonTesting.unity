@@ -2541,6 +2541,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 9104366225334644926, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104366225334644926, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -2868,7 +2872,7 @@ GameObject:
   - component: {fileID: 1534106081}
   - component: {fileID: 1534106080}
   - component: {fileID: 1534106079}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Forest
   m_TagString: Ground
   m_Icon: {fileID: 0}
