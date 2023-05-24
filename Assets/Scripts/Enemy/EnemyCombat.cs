@@ -12,7 +12,7 @@ public class EnemyCombat : MonoBehaviour
     public LayerMask playerLayer;
     private void Awake()
     {
-        playerLayer = LayerMask.GetMask("Player");
+        //playerLayer = LayerMask.GetMask("Player");
     }
 
     private void OnTriggerEnter2D(Collider2D collision) 

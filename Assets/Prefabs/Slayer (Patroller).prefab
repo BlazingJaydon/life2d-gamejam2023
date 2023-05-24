@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolSpeed: 2
-  chasingSpeed: 4
+  chasingSpeed: 10
   animator: {fileID: 643843666801182522}
 --- !u!114 &4129470126055359899
 MonoBehaviour:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanDetectPlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1 &643843667114245225
 GameObject:
   m_ObjectHideFlags: 0

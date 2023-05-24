@@ -515,11 +515,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9104366224420772137, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
   m_PrefabInstance: {fileID: 980148765}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &344590314 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 643843667114245226, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
-  m_PrefabInstance: {fileID: 643843667323304832}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &375401535
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,11 +669,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!95 &589397178 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 643843666801182522, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
-  m_PrefabInstance: {fileID: 643843667323304832}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &673543104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,21 +2430,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9104366224420772137, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -10.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366224420772181, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9104366225334644921, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644921, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9104366225334644921, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2496,56 +2474,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644922, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Size.x
-      value: 0.89709044
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644922, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Size.y
-      value: 1.6380417
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644922, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.03087306
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644922, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.0102911
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644922, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.875
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644922, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.625
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644923, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 983381659, guid: 7ce0681d1a3c15b4e951855d503b3596, type: 3}
-    - target: {fileID: 9104366225334644923, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644923, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644923, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_SortingOrder
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 9104366225334644926, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644926, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104366225334644926, guid: caae791c2bed4a64ebc35988d50b0e99, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2872,7 +2802,7 @@ GameObject:
   - component: {fileID: 1534106081}
   - component: {fileID: 1534106080}
   - component: {fileID: 1534106079}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Forest
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4541,14 +4471,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 78723583190448390, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
-      propertyPath: patrolSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 78723583190448390, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
-      propertyPath: chasingSpeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 643843666801182521, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
       propertyPath: m_Name
       value: Slayer (Patroller)
@@ -4597,18 +4519,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4129470126055359899, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 589397178}
-    - target: {fileID: 4129470126055359899, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
-      propertyPath: attackPoint
-      value: 
-      objectReference: {fileID: 344590314}
-    - target: {fileID: 7131066782381003853, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 589397178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec72d934894f1ef4c8f478ddc9ddb1e7, type: 3}
 --- !u!1001 &1502546713632309937
