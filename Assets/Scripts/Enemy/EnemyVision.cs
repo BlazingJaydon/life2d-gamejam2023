@@ -26,7 +26,11 @@ public class EnemyVision : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, visionRange, CanDetectPlayer);
 
             if (hit.collider != null && hit.collider.CompareTag("Player"))
+            {
+                Debug.Log("Slayer saw the Player");
                 playerFound = true;
+            }
+                
         }
 
         return playerFound;

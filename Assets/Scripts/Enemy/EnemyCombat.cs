@@ -10,9 +10,9 @@ public class EnemyCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask playerLayer;
-
     private void Awake()
     {
+        playerLayer = LayerMask.GetMask("Player");
     }
 
     private void OnTriggerEnter2D(Collider2D collision) 
