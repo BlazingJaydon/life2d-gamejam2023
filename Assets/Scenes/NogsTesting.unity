@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Intensity: 0.2
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000a118d99f55d905e22d2d1c24859376b3
+  m_ApplyToSortingLayers: 00000000a118d99f55d905e217ec86832d2d1c24859376b3
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -2965,9 +2965,9 @@ GameObject:
   - component: {fileID: 1035072208}
   - component: {fileID: 1035072207}
   - component: {fileID: 1035072212}
-  - component: {fileID: 1035072211}
+  - component: {fileID: 1035072214}
   - component: {fileID: 1035072213}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slayer (Patrol)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -3064,7 +3064,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1532310271
+  m_SortingLayerID: -2088309737
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 380671810, guid: 5f57d82c17567a74686961b28ff123c6, type: 3}
@@ -3078,19 +3078,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1035072211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035072205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f638bb93b44f5d640b3631f70be2de49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1035072212}
 --- !u!95 &1035072212
 Animator:
   serializedVersion: 5
@@ -3127,6 +3114,21 @@ MonoBehaviour:
   CanDetectPlayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &1035072214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035072205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0dced6914c7e24ca665fcd7869a90b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolSpeed: 0
+  chasingSpeed: 0
+  animator: {fileID: 1035072212}
 --- !u!1001 &1039747810
 PrefabInstance:
   m_ObjectHideFlags: 0
