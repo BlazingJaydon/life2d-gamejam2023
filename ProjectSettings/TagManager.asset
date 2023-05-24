@@ -21,6 +21,8 @@ TagManager:
   - UI
   - Player
   - Enemies
+  - DetectUpperLayer
+  - DetectLowerLayer
   - 
   - 
   - 
