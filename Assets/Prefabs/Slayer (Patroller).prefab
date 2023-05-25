@@ -17,8 +17,6 @@ GameObject:
   - component: {fileID: 78723583190448390}
   - component: {fileID: 4129470126055359899}
   - component: {fileID: 4873305212374000587}
-  - component: {fileID: 5148694939640281809}
-  - component: {fileID: 4961971254917336883}
   m_Layer: 7
   m_Name: Slayer (Patroller)
   m_TagString: Enemy
@@ -111,7 +109,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: b16025e756671b241a781defebf8ee2e, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -193,6 +191,10 @@ MonoBehaviour:
   patrolSpeed: 2
   chasingSpeed: 10
   animator: {fileID: 643843666801182522}
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  player: {fileID: 0}
+  currentPoint: {fileID: 0}
 --- !u!114 &4129470126055359899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,46 +228,6 @@ MonoBehaviour:
   CanDetectPlayer:
     serializedVersion: 2
     m_Bits: 72
---- !u!114 &5148694939640281809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643843666801182521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60ea961607bdbd147b33dc179eac444d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4961971254917336883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643843666801182521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  drawGizmos: 1
-  detailedGizmos: 0
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  graphMask:
-    value: -1
 --- !u!1 &643843667114245225
 GameObject:
   m_ObjectHideFlags: 0

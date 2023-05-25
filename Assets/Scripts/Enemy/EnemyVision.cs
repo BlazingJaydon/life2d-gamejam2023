@@ -27,7 +27,7 @@ public class EnemyVision : MonoBehaviour
 
             if (hit.collider != null && hit.collider.CompareTag("Player"))
             {
-                Debug.Log("Slayer saw the Player");
+                Debug.Log("Enemy saw the Player");
                 playerFound = true;
             }
                 
